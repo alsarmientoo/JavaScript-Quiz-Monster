@@ -14,8 +14,8 @@ var ifTrue = document.querySelector("#if-true");
 var endGame = document.querySelector(".end-game");
 var highScore = document.querySelector(".highscores");
 var finalScore = document.querySelector("#score-list");
-var goBackbtn = document.querySelector(".btn go-back")
-var clearBtn = document.querySelector(".clear");
+var goBackbtn = document.querySelector("button.go-back")
+var clearBtn = document.querySelector("button.clear-score");
 var submitScore = document.querySelector("#submit")
 var initialsEl = document.querySelector("#initials")
 var scoreList = document.querySelector("#score-list");
@@ -173,6 +173,7 @@ function recallScores() {
 };
 
 function deleteScores() {
+    localStorage.clear();
     scoreList.innerHTML = "";
 }
 
@@ -188,3 +189,5 @@ goBackbtn.addEventListener("click", function() {
     startQuiz();
     startTime();
 });
+
+clearBtn.addEventListener("click", deleteScores);

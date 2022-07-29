@@ -1,3 +1,18 @@
 .questions, .end-game, .choices,  .highscores {
     display: none;
 }
+
+body {
+    background-color: azure;
+    text-align: center;
+}
+
+#timer {
+    text-align: right;
+}
+
+#answer1:hover, #answer2:hover, #answer3:hover, #answer4:hover {
+    background-color: black;
+    color: pink;
+}
+
