@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css"/>
+    <title>JavaScript Quiz Code Monster</title>
+</head>
+<body>
+
+    <section id="view-score">
+        <button id="view-scores" type="button" class="btn score-btn">View Scores</button>
+    </section>
+    <div class="hello">
+        <h1 class="welcome">JavaScript Coding Challenge</h1>
+        <p>Try to answer the following javascript code questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+        <button id="start" type="button">Let's start</button>
+    </div>
+
+    <div id="timer">Time left: 75 seconds</div>
+
+    <section class="questions">
+        <div class="quiz">
+            <h2 id="question"></h2>
+            
+            <ul id="choices">
+                <li class="answer"><button id="answer1" value="0" type="button" class="btn answ-btn">Answer1</button></li>
+                <li class="answer"><button id="answer2" value="1" type="button" class="btn answ-btn">Answer2</button></li>
+                <li class="answer"><button id="answer3" value="2" type="button" class="btn answ-btn">Answer3</button></li>
+                <li class="answer"><button id="answer4" value="3" type="button" class="btn answ-btn">Answer4</button></li>
+            </ul>
+        </div>
+    </section>
+    
+    <div id="if-true">
+        <p>
+        </p>
+    </div>
+
+    <div class="end-game">
+        <div class="game-score">
+            <h2>Well done!</h2>
+            <p id="score">Your final score is: <span id="score"></span></p>
+            <p>Quiz monster's initials: </p> <span><input id="initials"/></span>
+                <button id="submit" class="btn btn-submit">Submit</button>
+        </div>
+    </div>
+
+    <div class="highscores">
+        <h2>High Scores</h2>
+            <ol id="score-list"></ol>
+            <button id="back" class="btn go-back">Go back!</button>
+            <button id="clear" class="btn clear-score">Clear!</button>
+    </div>
+        
+
+    <script src="./assets/script.js"></script>
+</body>
+</html>
